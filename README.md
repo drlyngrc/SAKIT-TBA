@@ -1,4 +1,4 @@
-# <img src="Icon/icon.png" alt="SAKIT Icon" width="50" height="50"> **SAKIT**  
+# <img src="Icon/icon.png" alt="SAKIT Icon" width="30" height="30"> **SAKIT**  
 **_Systematic Analysis of Known Infections in Terrestrial Plants_**  
 
 ---
