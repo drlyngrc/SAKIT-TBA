@@ -1,6 +1,5 @@
-# ![SAKIT Icon](https://example.com/icon.png)
-**SAKIT**  
-*Systematic Analysis of Known Infections in Terrestrial Plants*  
+# <img src="Icon/icon.png" alt="SAKIT Icon" width="50" height="50"> **SAKIT**  
+**_Systematic Analysis of Known Infections in Terrestrial Plants_**  
 
 ---
 
