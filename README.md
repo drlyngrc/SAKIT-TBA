@@ -3,13 +3,16 @@
 
 ---
 
+[<button>Try Live Demo</button>](https://your-demo-link.com)
 
-## **I. Overview**  
+
+## **I. _Overview_**  
 
 **SAKIT** is a web application designed to identify plant diseases from user-uploaded images using image analysis powered by machine learning. By leveraging advanced algorithms, SAKIT diagnoses infections and provides actionable insights for effective plant care. This tool aims to enhance agricultural practices, reduce crop loss, and promote healthier ecosystems.
 
+<br>
 
-## **II. System Architecture**  
+## **II. _System Architecture_**  
 
 #### **Frontend**  
 - **Technologies**: HTML, CSS, JavaScript  
@@ -35,8 +38,9 @@
 #### **Deployment**  
 - Hosted on AWS EC2 for the backend and Firebase Hosting for the frontend.
 
+<br>
 
-## **III. Applied Computer Science Concepts**  
+## **III. _Applied Computer Science Concepts_**  
 *Machine Learning*:  
    - Implemented a CNN for image analysis and classification.  
 
@@ -49,8 +53,9 @@
 *Web Development*:  
    - Responsive and interactive user interface.  
 
+<br>
 
-## **IV. Algorithms Used**  
+## **IV. _Algorithms Used_**  
 
 1. **Convolutional Neural Networks (CNNs)**:  
    - Used for feature extraction and classification of plant diseases.  
@@ -62,9 +67,9 @@
 3. **Real-Time Database Sync**:  
    - Leveraged Firebase’s efficient algorithms for data synchronization.  
 
+<br>
 
-
-## **V. Security Mechanism**  
+## **V. _Security Mechanism_**  
 
 1. **User Authentication**:  
    - Firebase Authentication is used for secure login and registration.  
@@ -75,9 +80,9 @@
 4. **Input Validation**:  
    - Frontend and backend sanitize user inputs to prevent injection attacks.  
 
+<br>
 
-
-## **VI. Development Process and Design Decisions**  
+## **VI. _Development Process and Design Decisions_**  
 
 1. **Development Methodology**:  
    - Agile development with iterative releases.  
@@ -90,9 +95,9 @@
 3. **Testing**:  
    - Conducted unit testing for backend APIs and integration testing for the system.  
 
+<br>
 
-
-## **VII. Correctness and Efficiency**  
+## **VII. _Correctness and Efficiency_**  
 
 1. **Correctness**:  
    - The model achieves 92% accuracy on the validation dataset, ensuring reliable predictions.  
@@ -102,9 +107,9 @@
    - Optimized API response times by preloading the ML model in memory.  
    - Reduced database query times using Firebase’s indexed data structure.  
 
+<br>
 
-
-## **VIII. How to Run the Project**  
+## **VIII. _How to Run the Project_**  
 
 ### Prerequisites  
 - **Python** (v3.9 or later)  
@@ -139,7 +144,9 @@
 - Access the frontend in a browser.
 - Use http://localhost:8000/docs to test the backend APIs.
 
-## **IX. Contributors**  
+<br>
+
+## **IX. _Contributors_**  
 **CS 3102**  
 *Backend Developer*: [Barican, John Andrei A.](https://github.com/e4677)
 
@@ -147,5 +154,6 @@
 
 *Frontend Developer*: [Lalongisip, Darlyne Grace M.](https://github.com/drlyngrc)
 
+<br>
 
-## **X. Acknowledgement**  
+## **X. _Acknowledgement_**  
