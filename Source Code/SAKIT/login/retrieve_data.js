@@ -3,14 +3,7 @@ import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/fi
 import {getFirestore, getDoc, setDoc, doc} from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js"
 import { getStorage, ref, uploadBytes, getDownloadURL, listAll, deleteObject, getMetadata} from "https://www.gstatic.com/firebasejs/11.0.1/firebase-storage.js";
 
-const firebaseConfig = {
-    apiKey: "AIzaSyAgHwpcRfzNOVeJi8tEmMxPfm_g1I4eJT4",
-    authDomain: "sakit-dbms-135c2.firebaseapp.com",
-    projectId: "sakit-dbms-135c2",
-    storageBucket: "sakit-dbms-135c2.firebasestorage.app",
-    messagingSenderId: "1048882625699",
-    appId: "1:1048882625699:web:b469ab6a3df154b8bb9316"
-};
+//const firebaseConfig
   
 const app = initializeApp(firebaseConfig);
 
