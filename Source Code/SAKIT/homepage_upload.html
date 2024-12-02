@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icon/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="login/homepage/homepage.css">
+    
+    <title>SAKIT | Upload</title>
+</head>
+<body>
+    <!--=============== HEADER ===================-->
+    <header class="header" id="header">
+        <div class="header_container">
+            <a href="" class="header_logo">
+                <img src="assets/icon/favicon.png" alt="logo icon" class="logo">
+                <span>SAKIT</span>
+            </a>
+
+            <button class="header_toggle" id="header-toggle">
+                <i class="ri-menu-line"></i>
+            </button>
+        </div>
+    </header>
+
+    <!--=============== SIDEBAR ===================-->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar_container">
+            <div class="sidebar_user">
+                <div class="sidebar_img">
+                    <i class="ri-account-circle-fill"></i>
+                </div>
+
+                <div class="sidebar_info" id="sidebar-info">
+                    <span id="loggedfname"></span>
+                    <span id="loggedlname"></span>
+                    <span id="loggedUsername"></span>
+                    <span id="loggedEmail"></span>
+                </div>
+            </div>
+
+            <div class="sidebar_content">
+                <div>
+                    <h3 class="sidebar_title">MAIN</h3>
+
+                    <div class="sidebar_list">
+                        <a href="homepage_upload.html" class="sidebar_link active-link">
+                            <i class="ri-file-upload-fill"></i>
+                            <span>Upload</span>
+                        </a>
+
+                        <a href="homepage_history.html" class="sidebar_link"  id="history-button">
+                            <i class="ri-history-fill"></i>
+                            <span>History</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar_actions">
+                <button>
+                    <i class="ri-moon-fill sidebar_link sidebar_theme" id="theme-button">
+                        <span>Appearance</span>
+                    </i>
+                </button>
+
+                <button class="sidebar_link signout" id="signout-button">
+                    <i class="ri-logout-box-fill"></i>
+                    <span>Sign Out</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!--=============== MAIN ===================-->
+    <main class="upload-main main container" id="main">
+        <section class="info_container_section">
+            <div class="info_content">
+                <h1 class="info_title">
+                    SAKIT
+                </h1>
+                <h4 class="info-title sub">
+                    Systematic Analysis of Known Infections in Terrestrial plants
+                </h4>
+    
+                <p class="info_description">
+                    Upload an image of your plant to easily 
+                    identify potential diseases. Using advanced 
+                    image recognition, this app analyzes your plant's 
+                    condition and provides insights into what disease 
+                    it might have. Stay proactive in plant care by 
+                    receiving early warnings, and get recommendations 
+                    for treatment to protect your plants and ensure their health.
+                </p>
+            </div>
+
+            <div class="info_images">
+                <h3 class="info_images_title">Common Plant Diseases</h3>
+                <div class="info_images_grid">
+                    <figure class="info_image_figure">
+                        <img src="assets/img/tomato.JPG" alt="Bacterial Spot" class="info_image">
+                        <figcaption>
+                            Bacterial Spot
+                            <i class="fa-solid fa-circle-info info_icon"></i>
+                            <div class="tooltip">
+                                Caused by bacteria, this disease forms water-soaked lesions on leaves and fruits.
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="info_image_figure">
+                        <img src="assets/img/corn.JPG" alt="Common Rust" class="info_image">
+                        <figcaption>
+                            Common Rust
+                            <i class="fa-solid fa-circle-info info_icon"></i>
+                            <div class="tooltip">
+                                A fungal disease causing reddish or orange pustules on leaves, primarily in corn plants.
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="info_image_figure">
+                        <img src="assets/img/potato.JPG" alt="Early Blight" class="info_image">
+                        <figcaption>
+                            Early Blight
+                            <i class="fa-solid fa-circle-info info_icon"></i>
+                            <div class="tooltip">
+                                A common fungal disease affecting tomatoes and potatoes, leading to dark spots and leaf decay.
+                            </div>
+                        </figcaption>
+                    </figure>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="upload_container_section">
+            <h1 class="upload_title">Plant Disease Detection</h1>
+            <div class="upload_container">
+                <input type="file" id="file" accept="image/*" hidden>
+                <div class="img-area" data-img="">
+                    <i class='bx bxs-cloud-upload icon'></i>
+                    <h3>Upload Image</h3>
+                    <p>Image size must be less than <span>5MB</span></p>
+                </div>
+                <div class="upload-button-group">
+                    <button class="select-image" id="select_image">Browse Image</button>
+                    <button class="identify-image" id="upload_btn">Identify Image</button>
+                </div>
+                <div id="result-message">Result appears here.</div>
+            </div>
+        </section>
+    </main>
+
+
+    <!--
+    <h1>Welcome to the Homepage</h1>
+    <div class="user_info">
+        <ul class="user_data">
+            <li>First Name: <span id="loggedfname"></span></li>
+            <li>Last Name: <span id="loggedlname"></span></li>
+            <li>User Name: <span id="loggedUsername"></span></li>
+            <li>Email: <span id="loggedEmail"></span></li>
+        </ul>
+    </div>
+   
+    <button id="signout">Sign Out</button>
+
+    <div class="table_container">
+        <table>
+            <tr>
+                <th>Specimen</th>
+                <th>Diagnosis</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>
+                    <form action="#">
+                        <input type="file" id="myFile" name="filename">
+                        <input type="submit">
+                    </form>
+                </td>
+                <td>Try 2</td>
+                <td>Try 3</td>
+            </tr>
+        </table>
+    </div>
+-->
+    <script src="login/homepage/homepage.js"></script>
+    <script type="module" src="login/retrieve_data.js"></script>
+
+    
+</body>
+</html>

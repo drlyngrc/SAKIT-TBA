@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="assets/icon/favicon.png" type="image/x-icon">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <title>SAKIT | TBA</title>
+   </head>
+   <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#"class="nav_logo"><img src="assets/icon/favicon.png" alt="logo icon" class="logo">SAKIT</a>
+
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link active-link">Home</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#learn" class="nav_link">Learn More</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#library" class="nav_link">Library</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#about" class="nav_link">About</a>
+                        </li>
+                        <!-- Login Button -->
+                        <li class="nav_login" id="nav-login">
+                            <button class="nav_button" onclick="window.location.href='login.html'">Login</button>
+                        </li>
+                    </ul>
+                    <!--close button-->
+                    <div class="nav_close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <!--toggle-->
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="ri-menu-fill"></i>
+                </div>
+            </nav>
+        </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <img src="assets/img/home-bg.png" alt="home image" class="home_bg">
+            <div class="home_shadow"></div>
+            <div class="home_container container grid">
+                <div class="home_data">
+                    <h1 class="home_title">Detect Plant Disease</h1>
+                    <h2 class="home_sub">and save plants now</h2>
+                    <p class="home_description">This is a web application built to detect terrestrial plant disease by uploading images of their plants.</p>
+                
+                    <a href="homepage_upload.html" class="button">
+                        Try Now!<i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <div class="home_cards grid">
+                    <article class="home_card">
+                        <img src="assets/img/home1.jpeg" alt="home image" class="home_card-img">
+                        <h3 class="home_card-title"></h3>
+                        <div class="home_card-shadow"></div>
+                    </article>
+
+                    <article class="home_card">
+                        <img src="assets/img/home2.jpeg" alt="home image" class="home_card-img">
+                        <h3 class="home_card-title"></h3>
+                        <div class="home_card-shadow"></div>
+                    </article>
+
+                    <article class="home_card">
+                        <img src="assets/img/home3.jpeg" alt="home image" class="home_card-img">
+                        <h3 class="home_card-title"></h3>
+                        <div class="home_card-shadow"></div>
+                    </article>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== LEARN MORE ====================-->
+         <section class="learn section" id="learn">
+            <div class="learn_container container grid">
+                <div class="learn_data">
+                    <h2 class="section_title">
+                        Learn More <br> 
+                        About Plant Disease</h2>
+
+                    <p class="learn_description">
+                        Explore how our innovative platform identifies 
+                        and analyzes plant diseases in terrestrial facilities. 
+                        With advanced detection techniques, we help ensure 
+                        the health and productivity of your plants by 
+                        pinpointing issues early, allowing for timely 
+                        and effective interventions. Protect your operations 
+                        with precision diagnostics tailored for terrestrial plants.</p>
+                        
+                    <a href="login.html" class="button">
+                        Explore Now!<i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <div class="learn_image">
+                    <img src="assets/img/about1.jpeg" alt="learn image" class="learn_img">
+                    <div class="learn_shadow">
+                        
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== LIBRARY ====================-->
+         <section class="library section" id="library">
+            <h2 class="section_title">Disease</h2>
+            <div class="library_container container grid">
+                 
+                <article class="library_card">
+                    <div class="library_image">
+                        <img src="assets/img/tomato.JPG" alt="library image" class="library_img">
+                        <div class="library_shadow"></div>
+                        <div class="library_hover-content">
+                            <p>
+                                <b>Bacterial spot</b> is a plant disease that affects many crops. 
+                                It is caused by bacteria such as <em>Xylella fastidiosa and 
+                                Xanthomonas vesicatoria</em>, among others. The disease can 
+                                cause spots on the foliage, fruit, or stems of the plant, 
+                                which can be yellow, brown, or black.
+                            </p>
+                        </div>
+                    </div>
+                    <h2 class="library_title">Bacterial spot</h2>
+                    <div class="library_location">
+                        <i class="ri-virus-fill"></i>
+                        <span>Bacterial spot</span>
+                    </div>
+                </article>
+
+                <article class="library_card">
+                    <div class="library_image">
+                        <img src="assets/img/corn.jpg" alt="library image" class="library_img">
+                        <div class="library_shadow"></div>
+                        <div class="library_hover-content">
+                            <p>
+                                <b>Common rust</b> is a fungal disease that is often found in 
+                                Midwest cornfields during the growing season. Common rust 
+                                can decrease yield by increasing the potential for 
+                                poorly filled kernels, as well as stalk rot and lodging. 
+                                Preventing this disease with a timely fungicide application 
+                                can protect corn yield.
+                            </p>
+                        </div>
+                    </div>
+                    <h2 class="library_title">Common rust</h2>
+                    <div class="library_location">
+                        <i class="ri-virus-fill"></i>
+                        <span>Common rust</span>
+                    </div>
+                </article>
+                
+
+                <article class="library_card">
+                    <div class="library_image">
+                        <img src="assets/img/potato.JPG" alt="library image" class="library_img">
+                        <div class="library_shadow"></div>
+                        <div class="library_hover-content">
+                            <p>
+                                <b>Early blight</b> is a common tomato disease caused by the fungus 
+                                <em>Alternaria solani</em> or closely related 
+                                <em>Alternaria tomatophila</em>. This disease should not be confused with 
+                                late blight, which occurs later in the growing season, is much more deadly, 
+                                and can spread much further and more quickly.
+                            </p>
+                        </div>
+                    </div>
+                    <h2 class="library_title">Early Blight</h2>
+                    <div class="library_location">
+                        <i class="ri-virus-fill"></i>
+                        <span>Early Blight</span>
+                    </div>
+                </article>
+               
+            </div>
+         </section>
+         
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about_container">
+                <div class="about_image">
+                    <img src="assets/img/explore1.jpg" alt="about image" class="about_img">
+                    <div class="about_shadow"></div>
+                </div>
+
+                <div class="about_content container grid">
+                    <div class="about_data">
+                        <h2 class="section_title">
+                            Explore <br> Knowledge
+                        </h2>
+    
+                        <p class="about_description">
+                            Understanding plant diseases is essential 
+                            for maintaining healthy ecosystems and 
+                            productive agriculture. Whether you're a 
+                            farmer, gardener, or nature enthusiast, 
+                            this tool offers valuable information to 
+                            help you keep plants thriving. Lets work 
+                            together to create a healthier environment, 
+                            one plant at a time.
+                        </p>
+                    </div>
+    
+                    <div class="about_user">
+                        <div class="user" data-tooltip="Backend Developer">
+                            <img src="assets/developer/drei.JPG" alt="about image" class="about_perfil">
+                            <span class="about_name">John Andrei</span>
+                        </div>
+                        <div class="user" data-tooltip="Project Manager & Fullstack">
+                            <img src="assets/developer/glenn.JPG" alt="eabout image" class="about_perfil">
+                            <span class="about_name">Glenn</span>
+                        </div>
+                        <div class="user" data-tooltip="Frontend Developer">
+                            <img src="assets/developer/dar.JPG" alt="about image" class="about_perfil">
+                            <span class="about_name">Darlyne Grace</span>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+         </section>
+         
+         <!--==================== CONTACT ====================-->
+         <section class="contact section">
+            <div class="contact_container container grid">
+                <div class="contact_data">
+                    <h2 class="section_title">
+                        Contact Us!
+                    </h2>
+
+                    <p class="contact_description">
+                        Get up to date with the latest
+                        information from us.
+                    </p>
+
+                    <form action="" class="contact_form">
+                        <input type="email" placeholder="Enter your email" class="contact_input">
+                        
+                        <button class="contact_button button">
+                            Subscribe our newsletter <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact_image">
+                    <img src="assets/img/home1.jpeg" alt="contact image" class="contact_img">
+                    <div class="contact_shadow"></div>
+                </div>
+            </div>
+         </section>
+      </main>
+      
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer_container container grid">
+            <div class="footer_content grid">
+                <div>
+                    <a href="#" class="footer_logo">SAKIT</a>
+
+                    <p class="footer_description">
+                        Detect Plant Disease <br>
+                        and save plants now.
+                    </p>
+                </div>
+
+                <div class="footer_data grid">
+                    <div>
+                        <h3 class="footer_title">About</h3>
+
+                        <ul class="footer_links">
+                            <li>
+                                <a href="#" class="footer_link">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer_link">Features</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer_link">News & Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer_title">Company</h3>
+
+                        <ul class="footer_links">
+                            <li>
+                                <a href="#" class="footer_link">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer_link">History</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer_link">Testimonials</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer_title">Contact</h3>
+
+                        <ul class="footer_links">
+                            <li>
+                                <a href="#" class="footer_link">Call Center</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer_link">Support Center</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer_link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer_title">Support</h3>
+
+                        <ul class="footer_links">
+                            <li>
+                                <a href="#" class="footer_link">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer_link">Terms & Services</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer_link">Donations</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="footer_group">
+                <div class="footer_social">
+                    <a href="https://www.facebook.com" target="_blank" class="footer_social-link">
+                        <i class="ri-facebook-box-fill"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer_social-link">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+
+                    <a href="https://github.com/glngnbn/SAKIT" target="_blank" class="footer_social-link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                </div>
+
+                <span class="footer_copy">
+                    &#169; Copyright SAKIT. All rights reserved
+                </span>
+            </div>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+      <script src="login/retrieve_data.js"></script>
+   </body>
+</html>

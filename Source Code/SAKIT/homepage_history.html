@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icon/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="login/homepage/homepage.css">
+    <title>SAKIT | History</title>
+</head>
+<body>
+    <!--=============== HEADER ===================-->
+    <header class="header" id="header">
+        <div class="header_container">
+            <a href="" class="header_logo">
+                <img src="assets/icon/favicon.png" alt="logo icon" class="logo">
+                <span>SAKIT</span>
+            </a>
+
+            <button class="header_toggle" id="header-toggle">
+                <i class="ri-menu-line"></i>
+            </button>
+        </div>
+    </header>
+
+    <!--=============== SIDEBAR ===================-->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar_container">
+            <div class="sidebar_user">
+                <div class="sidebar_img">
+                    <i class="ri-account-circle-fill"></i>
+                </div>
+
+                <div class="sidebar_info" id="sidebar-info">
+                    <span id="loggedfname"></span>
+                    <span id="loggedlname"></span>
+                    <span id="loggedUsername"></span>
+                    <span id="loggedEmail"></span>
+                </div>
+            </div>
+
+            <div class="sidebar_content">
+                <div>
+                    <h3 class="sidebar_title">MAIN</h3>
+
+                    <div class="sidebar_list">
+                        <a href="homepage_upload.html" class="sidebar_link">
+                            <i class="ri-file-upload-fill"></i>
+                            <span>Upload</span>
+                        </a>
+
+                        <a href="homepage_history.html" class="sidebar_link  active-link" id="history-button">
+                            <i class="ri-history-fill"></i>
+                            <span>History</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar_actions">
+                <button>
+                    <i class="ri-moon-fill sidebar_link sidebar_theme" id="theme-button">
+                        <span>Appearance</span>
+                    </i>
+                </button>
+
+                <button class="sidebar_link" id="signout-button">
+                    <i class="ri-logout-box-fill"></i>
+                    <span>Sign Out</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!--=============== MAIN ===================-->
+    <main class="history-main main container" id="main">
+        <section class="history_container_section">
+            <h2 class="history_title">History of Detected Images</h2>
+            <div class="filter-container">
+                <label for="filter-dropdown" class="filter-label">Filter by Disease:</label>
+                <select id="filter-dropdown" class="filter-dropdown">
+                    <option value="" selected>All Diseases</option>
+                    <option value="Bacterial Spot">Bacterial Spot</option>
+                    <option value="Common Rust">Common Rust</option>
+                    <option value="Early Blight">Early Blight</option>
+                </select>
+                <!--<div class="delete_all">
+                    <button id="delete-all">
+                        Delete All
+                    </button>
+                </div>-->
+            </div>
+            
+
+            <div class="history_table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Disease Name</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyTableBody">
+                        <!-- Rows or "No history found" message will be dynamically added here -->
+                    </tbody>
+                </table>
+            </div>            
+            
+        </section>
+    </main>
+    
+
+    <!--
+    <h1>Welcome to the Homepage</h1>
+    <div class="user_info">
+        <ul class="user_data">
+            <li>First Name: <span id="loggedfname"></span></li>
+            <li>Last Name: <span id="loggedlname"></span></li>
+            <li>User Name: <span id="loggedUsername"></span></li>
+            <li>Email: <span id="loggedEmail"></span></li>
+        </ul>
+    </div>
+   
+    <button id="signout">Sign Out</button>
+
+    <div class="table_container">
+        <table>
+            <tr>
+                <th>Specimen</th>
+                <th>Diagnosis</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>
+                    <form action="#">
+                        <input type="file" id="myFile" name="filename">
+                        <input type="submit">
+                    </form>
+                </td>
+                <td>Try 2</td>
+                <td>Try 3</td>
+            </tr>
+        </table>
+    </div>
+-->
+    <script src="login/homepage/homepage.js"></script>
+    <script type="module" src="login/retrieve_data.js"></script>
+    <!--<script src="assets/js/history.js"></script>-->
+    
+</body>
+</html>

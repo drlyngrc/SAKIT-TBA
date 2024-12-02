@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="assets/icon/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+	<link rel="stylesheet" href="login/login.css">
+    <title>Sakit | Account</title>
+
+</head>
+<body>
+	<header>
+		<button onclick="history.back()" class="back_button">
+			<i class="ri-arrow-left-line"></i> Back
+		</button>
+	</header>
+    <div class="container2">
+		<div class="container" id="container">
+			<div class="form-container sign-up-container">
+				<form action="#">
+					<h1>Create Account</h1>
+					<div id="signup_message" class="messageDiv" style="display: none;"></div>
+					
+					<!-- Input with icons -->
+					<div class="input-container">
+						<i class="ri-id-card-fill login_icon"></i>   
+						<input type="text" placeholder="First Name" id="firstname" />
+					</div>
+					<div class="input-container">
+						<i class="ri-id-card-fill login_icon"></i>
+						<input type="text" placeholder="Last Name" id="lastname" />
+					</div>
+					<div class="input-container">
+						<i class="ri-user-fill login_icon"></i>
+						<input type="text" placeholder="Username" id="username" />
+					</div>
+					<div class="input-container">
+						<i class="ri-mail-fill login_icon"></i>
+						<input type="email" placeholder="Email" id="regemail" />
+					</div>
+					<div class="input-container">
+						<i class="ri-eye-off-fill login_icon login_password" id="regpassword_eye"></i>
+						<input type="password" placeholder="Password" id="regpassword" />
+					</div>
+			
+					<button type="submit" id="signup_btn">SIGN UP</button>
+					<div class="auth-divider">
+						<span>OR</span>
+					</div>
+					
+					<!-- Google sign-in button -->
+					<button class="google-btn" id="signup_google">
+						<i class="ri-google-fill"></i> Sign in with Google
+					</button>
+				</form>
+			</div>
+			
+
+			<div class="form-container sign-in-container">
+				<form action="#">
+					<h1>Sign in</h1>
+					
+					<div id="signin_message" class="messageDiv" style="display: none;"></div>
+			
+					<!-- Email input with icon -->
+					<div class="input-container">
+						<i class="ri-mail-fill login_icon"></i>
+						<input type="email" placeholder="Email" id="logemail" required />
+					</div>
+			
+					<!-- Password input with icon -->
+					<div class="input-container">
+						<i class="ri-eye-off-fill login_icon login_password" id="logpassword_eye"></i>
+						<input type="password" placeholder="Passsword" id="logpassword" required />
+					</div>
+			
+					<!-- Sign in button -->
+					<button type="submit" id="signin_btn">SIGN IN</button>
+					<div class="auth-divider">
+						<span>OR</span>
+					</div>
+					
+					<!-- Google sign-in button -->
+					<button class="google-btn" id="signin_google">
+						<i class="ri-google-fill"></i> Sign in with Google
+					</button>
+				</form>
+			</div>
+			
+			<div class="overlay-container">
+				<div class="overlay">
+					<div class="overlay-panel overlay-left">
+						<h1>Already have an account?</h1>
+						<p>Sign in and continue your detection journey!</p>
+						<button class="ghost" id="signIn">SIGN IN</button>
+					</div>
+					<div class="overlay-panel overlay-right">
+						<h1>Want to save your detections?</h1>
+						<p>Sign up now to access your detections anytime!</p>
+						<button class="ghost" id="signUp">SIGN UP</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script type="module" src="login/userdbms.js" defer></script>
+	<script src="login/login.js"></script>
+
+</body>
+</html>
+
+
