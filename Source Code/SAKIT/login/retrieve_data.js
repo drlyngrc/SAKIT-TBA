@@ -3,7 +3,7 @@ import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/fi
 import {getFirestore, getDoc, setDoc, doc} from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js"
 import { getStorage, ref, uploadBytes, getDownloadURL, listAll, deleteObject, getMetadata} from "https://www.gstatic.com/firebasejs/11.0.1/firebase-storage.js";
 
-//const firebaseConfig
+//The firebase configuration was not included for security purposes. If you wish to access this, inform the developers for such matter.
   
 const app = initializeApp(firebaseConfig);
 
