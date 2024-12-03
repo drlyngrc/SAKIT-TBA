@@ -3,7 +3,7 @@
 
 ---
 
-[![🌱 Try SAKIT](https://img.shields.io/badge/Try-SAKIT-brightgreen?style=for-the-badge)](https://SAKIT)  
+[![🌱 Try SAKIT](https://img.shields.io/badge/Try-SAKIT-brightgreen?style=for-the-badge)](http://127.0.0.1:5500/main.html)  
 
 ---
 
