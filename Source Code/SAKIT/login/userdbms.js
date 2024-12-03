@@ -54,8 +54,7 @@ submit_signup.addEventListener("click", function(event){
         .catch((error)=>{
             console.error("Error writing document", error)
         });
-        
-        // ...
+
     })
     .catch((error) => {
         const errorCode = error.code;
@@ -67,10 +66,8 @@ submit_signup.addEventListener("click", function(event){
             alert(errorMessage)
         }
         
-    // ..
     });
 })
-
 
 const submit_signin = document.getElementById('signin_btn');
 submit_signin.addEventListener('click', (event)=>{
@@ -106,7 +103,7 @@ const google_btns = [googlesignin, googlesignup];
 
 google_btns.forEach((btn) => {
     btn.addEventListener("click", (event) => {
-        event.preventDefault(); // Prevent default form behavior
+        event.preventDefault(); 
         signInWithPopup(auth, provider)
             .then((result) => {
                 const user = result.user;
@@ -114,17 +111,17 @@ google_btns.forEach((btn) => {
 
                 // Extract user details
                 const email = user.email;
-                const displayName = user.displayName || "N/A"; // Display name may not always be present
+                const displayName = user.displayName || "N/A";
                 const [firstName, lastName] = displayName.split(" "); // Split by space to get first and last name
 
                 // Optionally store user details in Firestore
                 const userdb = getFirestore();
                 const docRef = doc(userdb, "users", user.uid);
-                setDoc(docRef, { email, firstName, lastName }, { merge: true }) // Merge ensures other fields aren't overwritten
+                setDoc(docRef, { email, firstName, lastName }, { merge: true }) 
                     .then(() => {
                         console.log("User details saved to Firestore.");
                         showMessage("Google Sign-In successful!", "signin_message");
-                        window.location.href = "homepage_upload.html"; // Redirect to homepage
+                        window.location.href = "homepage_upload.html"; // to homepage
                     })
                     .catch((error) => {
                         console.error("Error saving user details to Firestore:", error);
@@ -136,8 +133,6 @@ google_btns.forEach((btn) => {
             });
     });
 });
-
-
 
 
 //---------------MAIN FUNC------------------------------------
