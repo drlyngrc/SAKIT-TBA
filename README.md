@@ -142,8 +142,14 @@
 - Update Firebase API configuration in the backend code.
 
 ### 5. **🏃 Run the Application**
-- Access the frontend in a browser.
-- Use http://localhost:8000/docs to test the backend APIs.
+- I. Start the Backend Server
+     - Run the Flask backend script using the command:
+       ```bash
+       python app.py
+       ```
+     - By default, the backend will be accessible at http://127.0.0.1:5000.
+- II. Access the Frontend
+     - Open a browser and navigate to http://127.0.0.1:5500/main.html  
 
 ---
 
