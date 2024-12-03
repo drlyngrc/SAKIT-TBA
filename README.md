@@ -11,7 +11,7 @@
 
 **SAKIT** is a web application designed to identify plant diseases from user-uploaded images using image analysis powered by machine learning. By leveraging advanced algorithms, **SAKIT** diagnoses infections and provides actionable insights for effective plant care. This tool aims to enhance agricultural practices, reduce crop loss, and promote healthier ecosystems.
 
-<div align="center"><img src="Icon/main.png" alt="SAKIT main" width="700" height="400">  </div>
+<div align="center"><img src="Icon/main.png" alt="SAKIT main" width="650" height="400">  </div>
 
 ---
 
