@@ -56,7 +56,6 @@ a {
   text-decoration: none;
 }
 
-
 img {
   display: block;
   max-width: 100%;
@@ -77,10 +76,7 @@ body.dark-theme {
   
 }
 
-/*========== 
-	Color changes in some parts of 
-	the website, in dark theme
-==========*/
+/*========== Color changes in some parts of the website, in dark theme ==========*/
 .dark-theme .sidebar_content::-webkit-scrollbar {
   background-color: hsl(228, 16%, 30%);
 }
@@ -135,7 +131,7 @@ body.dark-theme {
 }
 
 .dark-theme .history_table th {
-  color: #ffffff; /* White text for the table */
+  color: #ffffff;
   font-weight: 350;
   background-color: hsla(148, 100%, 35%, 0.512);
 }
@@ -147,7 +143,7 @@ body.dark-theme {
 body.dark-theme .filter-dropdown {
   background-color: hsla(146, 100%, 5%, 0.547); 
   color: #ffffffa5;
-  border: none; /* Green border */
+  border: none;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -246,15 +242,15 @@ body.dark-theme .filter-dropdown {
     position: relative;
     width: 50px;
     height: 50px;
-    border-radius: 50%; /* Ensures the container is circular */
-    display: flex; /* Centers the content */
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
     overflow: hidden;
 }
 
 .sidebar_img i {
-    font-size: 3rem; /* Adjust icon size as needed */
+    font-size: 3rem; 
     color: hsl(148, 54%, 18%);
 }
 
@@ -339,12 +335,10 @@ body.dark-theme .sidebar_img i {
   font-family: var(--body-font);
 }
 
-/* Show sidebar */
 .show-sidebar {
   left: 0;
 }
 
-/* Active link */
 .active-link {
   color: var(--first-color);
   
@@ -376,7 +370,6 @@ body.dark-theme .sidebar_img i {
   color: hsl(148, 100%, 35%);
 }
 
-
 /*================= UPLOAD MAIN && SECTIONS CONTAINER =================*/
 .upload-main {
   display: flex;
@@ -391,7 +384,7 @@ body.dark-theme .sidebar_img i {
   flex: 1;
   /*max-width: 50%;*/
   margin: 5px;
-  padding: 1rem 2rem; /* Add padding for better spacing */
+  padding: 1rem 2rem; 
   
 }
 
@@ -400,7 +393,7 @@ body.dark-theme .sidebar_img i {
   color: #1d5939;
   font-weight: 700;
   margin-top: 1rem;
-  text-align: left; /* Align title to the left */
+  text-align: left;
 }
 
 .info-title, 
@@ -410,9 +403,9 @@ body.dark-theme .sidebar_img i {
 
 .info_description {
   font-size: 1rem;
-  line-height: 1.6; /* Improve readability */
-  color: #333; /* Use neutral color for text */
-  text-align: justify; /* Justify text for neatness */
+  line-height: 1.6; /
+  color: #333; 
+  text-align: justify;
 }
 
 .upload_container_section {
@@ -440,7 +433,6 @@ body.dark-theme .sidebar_img i {
 }
 
 /*===================== Images Section Styles =====================*/
-/* General styles for info section */
 .info_images {
   margin-top: 2rem;
 }
@@ -450,12 +442,15 @@ body.dark-theme .sidebar_img i {
   gap: 1rem;
   flex-wrap: wrap;
   padding: 20px;
+  justify-content: center;
 }
 
 .info_image_figure {
   position: relative;
   text-align: center;
-  width: 30%;
+  width: 100%; 
+  max-width: 30%;
+  box-sizing: border-box; 
 }
 
 .info_image {
@@ -466,7 +461,7 @@ body.dark-theme .sidebar_img i {
 
 figcaption {
   margin-top: 0.5rem;
-  font-size: .95rem;
+  font-size: 0.95rem;
   color: #1d5939;
   display: flex;
   align-items: center;
@@ -477,19 +472,17 @@ figcaption {
 /* Info icon styles */
 .info_icon {
   color: #1d5939;
-  font-size: .75rem;
+  font-size: 0.75rem;
   cursor: pointer;
   position: relative;
   margin-left: 0.5rem;
-  opacity: 0.6; /* Lower opacity */
-  transition: opacity 0.2s ease-in-out; /* Smooth transition for hover */
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in-out; 
 }
 
-/* Increase opacity on hover */
 .info_icon:hover {
-  opacity: 1; /* Fully visible on hover */
+  opacity: 1;
 }
-
 
 /* Tooltip styles */
 .tooltip {
@@ -497,7 +490,7 @@ figcaption {
   opacity: 0;
   position: absolute;
   bottom: 15%;
-  left: 90%;
+  left: 50%;
   transform: translateX(-50%);
   background-color: #1d5939d3;
   color: #fff;
@@ -508,7 +501,8 @@ figcaption {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1;
   transition: opacity 0.2s ease-in-out;
-  width: 100%;
+  width: 90%; /* for smaller screens */
+  max-width: 200px; /* max width for tooltip */
 }
 
 .tooltip::after {
@@ -517,12 +511,10 @@ figcaption {
   transform: translateX(-50%);
 }
 
-/* Show tooltip on hover */
 .info_icon:hover + .tooltip {
   visibility: visible;
   opacity: 1;
 }
-
 
 /*================= IMAGE AREA =================*/
 .img-area {
@@ -533,7 +525,7 @@ figcaption {
   justify-content: center;
   background-color: #002c071f;
   width: 100%;
-  max-width: 500px; /* Optional: Limit max width */
+  max-width: 500px; 
   aspect-ratio: 1 / 1;
   height: auto;
   border-radius: 10px;
@@ -552,22 +544,22 @@ figcaption {
   height: 100%;
   object-fit: contain;
   object-position: center;
-  max-width: 100%; /* Prevent stretching beyond container */
+  max-width: 100%; 
   max-height: 100%;
-  z-index: 1; /* Ensure image stays above the background */
+  z-index: 1; 
 }
 
 .img-area .icon {
   font-size: 80px;
   color: #bbb;
-  z-index: 2; /* Ensure icon stays above the image */
+  z-index: 2;
 }
 
 .img-area h3 {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 6px;
-  z-index: 2; /* Ensure text stays above the image */
+  z-index: 2;
 }
 
 .img-area p {
@@ -613,12 +605,12 @@ figcaption {
   width: 100%;
   justify-content: space-between;
   text-align: center;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  flex-wrap: wrap; 
 }
 
 .select-image,
 .identify-image {
-  flex: 1; /* Buttons take equal space */
+  flex: 1;
   padding: 12px;
   font-size: 1rem;
   font-weight: 500;
@@ -655,7 +647,6 @@ figcaption {
   text-align: center;
 }
 
-
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 360px) {
@@ -666,39 +657,58 @@ figcaption {
   .sidebar {
     width: max-content;
   }
+	
   .sidebar_info, 
   .sidebar_link span {
     display: none;
   }
+	
   .sidebar_user, 
   .sidebar_list, 
   .sidebar_actions {
     justify-content: center;
   }
+	
   .sidebar_user, 
   .sidebar_link {
     grid-template-columns: max-content;
   }
+	
   .sidebar_user {
     padding: 0;
   }
+	
   .sidebar_link {
     padding-inline: 2rem;
   }
+	
   .sidebar_title {
     padding-inline: .5rem;
     margin-inline: auto;
   }
 
   .upload-button-group {
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 5px; /* Smaller gap for tighter spacing */
+    flex-direction: column; 
+    gap: 5px;
   }
 
   .select-image,
   .identify-image {
-    font-size: 0.9rem; /* Slightly smaller text */
-    padding: 10px; /* Reduce padding */
+    font-size: 0.9rem; 
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info_image_figure {
+    max-width: 100%; 
+  }
+
+  .tooltip {
+    bottom: auto;
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -723,13 +733,17 @@ figcaption {
   }
 
   .upload-button-group {
-    gap: 8px; /* Moderate gap */
+    gap: 8px;
   }
 
   .select-image,
   .identify-image {
-    font-size: 1rem; /* Keep standard font size */
-    padding: 10px; /* Slightly smaller padding */
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .info_image_figure {
+    max-width: 45%;
   }
 }
 
@@ -740,10 +754,12 @@ figcaption {
     padding-left: 310px;
     transition: padding .4s;
   }
+	
   .header_container {
     height: 3.70rem;
     padding-inline: 2rem;
   }
+	
   .header_logo {
     order: 1;
   }
@@ -753,16 +769,17 @@ figcaption {
     margin: 1rem;
     margin-left: 1.5rem;
   }
+	
   .sidebar_info, 
   .sidebar_link span {
     transition: opacity .4s;
   }
+	
   .sidebar_user, 
   .sidebar_title {
     transition: padding .4s;
   }
 
-  /* Reduce sidebar */
   .show-sidebar {
     width: 90px;
   }
@@ -784,13 +801,12 @@ figcaption {
     transition: padding .4s;
   }
 
-  /* Add padding left */
   .left-pd {
     padding-left: 120px;
   }
 
   .upload-button-group {
-    gap: 15px; /* Add more spacing between buttons */
+    gap: 15px;
   }
 
   .select-image,
@@ -809,7 +825,7 @@ figcaption {
 
 .history_container_section {
     margin: 1rem;
-    width: 100%; /* Ensure the container takes full width */
+    width: 100%;
     max-width: 1200px; 
 }
 
@@ -863,7 +879,6 @@ figcaption {
   width: 20%;
 }
 
-/* Make a specific column a bit narrower */
 .history_table td:last-child, 
 .history_table th:last-child {
     width: 14%;
@@ -889,7 +904,7 @@ figcaption {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
-  gap: 1rem; /* Adjust spacing between elements */
+  gap: 1rem;
 }
 
 .filter-label {
@@ -914,15 +929,15 @@ figcaption {
 }
 
 .delete_all {
-  margin-left: auto; /* Pushes the button to the right */
+  margin-left: auto;
   display: flex;
   align-items: center;
 }
 
 #delete-all {
-  padding: 8px 15px; /* Adjust padding */
+  padding: 8px 15px;
   font-size: .75rem;
-  background-color: #991d14; /* Red color */
+  background-color: #991d14; 
   color: white;
   border: none;
   border-radius: 5px;
@@ -932,26 +947,25 @@ figcaption {
 }
 
 #delete-all:hover {
-  background-color: #520505; /* Darker red for hover effect */
+  background-color: #520505; 
 }
 
 #delete-all:focus {
-  outline: none; /* Remove the default focus outline */
+  outline: none; 
 }
 
 .delete-btn {
-    background-color: #991d14; /* Red background */
-    color: #ffffff; /* White text */
-    border: none; /* Remove border */
-    padding: 8px 16px; /* Padding */
-    border-radius: 4px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor */
-    font-size: 14px; /* Font size */
-    transition: background-color 0.3s; /* Smooth transition */
+    background-color: #991d14;
+    color: #ffffff; 
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 14px; 
+    transition: background-color 0.3s;
 }
 
 .delete-btn:hover {
-    background-color: #520505; /* Darker red on hover */
+    background-color: #520505;
 }
-
 

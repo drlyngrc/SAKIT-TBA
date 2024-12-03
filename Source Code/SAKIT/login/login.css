@@ -50,11 +50,11 @@ button {
 .back_button i {
     margin-right: 5px;
     font-size: 25px; 
-    transition: transform 0.5s ease; /* Smooth animation */
+    transition: transform 0.5s ease; 
 }
 
 .back_button:hover i {
-    transform: translateX(-5px); /* Moves the arrow left */
+    transform: translateX(-5px); 
 }
 
 
@@ -149,10 +149,8 @@ input {
 
 input::placeholder {
     color: rgba(0, 0, 0, 0.285); 
-    font-size: 14px;           /* Optional: Adjust size */
-          /* Optional: Make it italic */
+    font-size: 14px; 
 }
-
 
 /* Input container with icons */
 .input-container {
@@ -203,8 +201,6 @@ input::placeholder {
 	padding-right: 5px;
 }
 
-
-/* Ensure the main container fits within the viewport */
 .container {
     background-color: #fff;
     border-radius: 40px;
@@ -348,7 +344,6 @@ input::placeholder {
     text-align: center;
 }
 
-
 /* Divider styling */
 .auth-divider {
     display: flex;
@@ -413,8 +408,7 @@ input::placeholder {
     width: auto;
 }
 
-/* ==================== RESPONSIVENESS ==================== */
-
+/* ==================== BREAKPOINTS ==================== */
 /* Mobile view */
 @media (max-width: 768px) {
     .container {
@@ -488,7 +482,7 @@ input::placeholder {
     }
 
     .overlay-container {
-        display: none; /* Hide overlay on smaller screens */
+        display: none;
     }
 
     .form-container {
@@ -514,7 +508,7 @@ input::placeholder {
     }
 
     .input-container input {
-        width: 100%; /* Ensure inputs span full width */
+        width: 100%; 
     }
 }
 
