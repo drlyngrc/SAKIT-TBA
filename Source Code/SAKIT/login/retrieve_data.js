@@ -20,7 +20,7 @@ const signOutButton = document.getElementById("signout-button");
 onAuthStateChanged(auth, (user) => {
     if (user) {
         console.log("User signed in:", user);
-        const loggedInUserId = user.uid; // Use Firebase Auth UID as the identifier
+        const loggedInUserId = user.uid; // Use Firebase Auth UID as identifier
         localStorage.setItem('loggedInUserId', loggedInUserId); // Store UID in localStorage for persistence
         
 
@@ -93,7 +93,7 @@ onAuthStateChanged(auth, (user) => {
             <button class="login-button">Login</button>
         `;
 
-        // Hide history and sign-out buttons
+        // Hide history and sign-out button
         historyButton.style.display = "none";
         signOutButton.style.display = "none";
 
@@ -123,7 +123,6 @@ document.getElementById('signout-button').addEventListener('click', () => {
         });
 });
 
- 
 
 const inputFile = document.getElementById('file');
 const imgArea = document.querySelector('.img-area');
@@ -267,12 +266,12 @@ function filter() {
     console.log('Filtering initialized');
 
     filterDropdown.addEventListener('change', function () {
-        const filterValue = this.value.toLowerCase(); // Get the selected value from the dropdown
-        console.log('Filter value changed to:', filterValue); // Debugging log
+        const filterValue = this.value.toLowerCase(); // get selected value from the dropdown
+        console.log('Filter value changed to:', filterValue); 
 
-        const tableRows = document.querySelectorAll('#historyTableBody tr'); // Select all rows in the table body
-        let noRecords = true; // Flag to track if any row is displayed
-
+        const tableRows = document.querySelectorAll('#historyTableBody tr'); 
+        let noRecords = true; 
+      
         // Clear any existing "No records found" row
         const tableBody = document.getElementById('historyTableBody');
         const existingNoRecordsRow = document.getElementById('no-records-row');
@@ -281,15 +280,15 @@ function filter() {
         }
 
         tableRows.forEach(row => {
-            const diseaseNameCell = row.querySelector('td:nth-child(2)'); // Assuming the disease name is in the second cell
+            const diseaseNameCell = row.querySelector('td:nth-child(2)'); // disease name is in the second cell
 
             if (diseaseNameCell) {
-                const diseaseName = diseaseNameCell.textContent.toLowerCase(); // Get the text of the disease name cell
+                const diseaseName = diseaseNameCell.textContent.toLowerCase(); 
 
                 // Check if the filter matches the disease name or if "All Diseases" is selected
                 if (filterValue === "" || diseaseName.includes(filterValue) || filterValue === "all diseases") {
-                    row.style.display = ''; // Show the row
-                    noRecords = false; // At least one record matches
+                    row.style.display = ''; 
+                    noRecords = false; 
                 } else {
                     row.style.display = 'none'; // Hide the row
                 }
@@ -350,7 +349,7 @@ function displayImages() {
                         const imgCell = document.createElement("td");
                         const imgElement = document.createElement("img");
                         imgElement.src = url;
-                        imgElement.style.width = "100%"; // Adjust as needed
+                        imgElement.style.width = "100%"; 
                         imgElement.alt = "Uploaded specimen";
                         imgCell.appendChild(imgElement);
 
@@ -434,5 +433,4 @@ function deleteImage(imageRef, rowElement) {
             console.error("Error deleting file:", error);
         });
 }
-
 
