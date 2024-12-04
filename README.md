@@ -162,4 +162,6 @@
 
 ---
 
-## **🥰 X. Acknowledgement**  
+## **🥰 X. Acknowledgement** 
+The developers would like to extend their acknowledgment to their course instructor, Ms. 
+[Fatima Marie P. Agdon] (https://github.com/marieemoiselle) for her invaluable support throughout the development of this project. Also, the developers would like to acknowledge their effort, perseverance, and dedication for the timely success of the system.
