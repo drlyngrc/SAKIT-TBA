@@ -159,3 +159,7 @@
 - **Backend Developer**: [Barican, John Andrei A.](https://github.com/e4677)  
 - **Project Manager/Fullstack Developer**: [Guinoban, Glenn M.](https://github.com/glngnbn)  
 - **Frontend Developer**: [Lalongisip, Darlyne Grace M.](https://github.com/drlyngrc)  
+
+---
+
+## **🥰 X. Acknowledgement**  
